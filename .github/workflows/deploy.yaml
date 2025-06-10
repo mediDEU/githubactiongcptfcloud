@@ -24,9 +24,13 @@ jobs:
       
     - name: Terraform Init
       run: terraform init
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
       
     - name: Terraform Validate
-      run: terraform validate 
+      run: terraform validate
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
        
     - name: Terraform Plan
       run: terraform plan
