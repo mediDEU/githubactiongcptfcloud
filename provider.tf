@@ -6,7 +6,7 @@ terraform {
       source  = "hashicorp/google"
       version = ">= 4.43.0"
     }
-
+}
 ##########################################
 provider "google" {
   project = "my-project-2025-461912"
