@@ -8,7 +8,7 @@ on:
 jobs:
  Terraform:
     name: 'Terraform'
-    runs-on: self-hosted
+    runs-on: runs-on:[self-hosted, linux, x64]
     defaults:
       run:
         shell: bash
